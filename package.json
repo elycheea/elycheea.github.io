@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "elycheea.github.io",
-  "repository": {
-    "url": "https://github.com/elycheea/elycheea.github.io",
-    "type": "git"
-  },
+  "repository": "https://github.com/elycheea/elycheea.github.io",
   "author": "elysia <elysia.hwang@gmail.com>",
   "keywords": [
     "gatsby"
