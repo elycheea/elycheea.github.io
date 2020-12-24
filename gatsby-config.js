@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "elycheea.github.io",
+    title: "elysia hwang",
+    description: "A designer who loves code, or a developer who loves design.",
+    author: `@elycheea`,
   },
   plugins: [
     "gatsby-plugin-sharp",
