@@ -1,0 +1,58 @@
+//-------------------------------------
+// Additional resets
+//-------------------------------------
+
+/* Default to full height of viewport */
+
+html {
+  height: -webkit-fill-available;
+  /* https://twitter.com/bfgeek/status/1262465912025698304 */
+}
+
+html,
+body {
+  min-height: 100%;
+  /* We keep this right? */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  /* We want the vendor-prefixed value to take affect
+                                         in browsers that support it, fall back to 100vh,
+                                         then 100%. */
+}
+
+/* Consistent default fonts across browsers */
+
+body {
+  font-family:
+    system-ui,
+    -apple-system, // Firefox supports this but not `system-ui`
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    'Liberation Mono',
+    Menlo,
+    monospace;
+  font-size: 1em;
+}
+
+//-------------------------------------
+// Global styles
+//-------------------------------------
+
+body {
+  font-family: 'Inter';
+}
