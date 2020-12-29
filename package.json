@@ -20,6 +20,9 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "cssremedy": "^0.1.0-beta.2",
+    "fontsource-inter": "^4.0.0",
+    "fontsource-roboto-mono": "^4.0.0",
+    "fontsource-space-grotesk": "^4.0.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-manifest": "^2.9.1",
@@ -35,5 +38,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  }
 }

@@ -14,6 +14,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('sass')
+      }
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
