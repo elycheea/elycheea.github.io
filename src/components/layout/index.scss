@@ -2,25 +2,26 @@
 // Additional resets
 //-------------------------------------
 
-/* Default to full height of viewport */
+/* Default to full height of viewport 
+source: https://github.com/jensimmons/cssremedy/issues/70
+*/
 
 html {
-  height: -webkit-fill-available;
-  /* https://twitter.com/bfgeek/status/1262465912025698304 */
+  height: -webkit-fill-available; // https://twitter.com/bfgeek/status/1262465912025698304
 }
 
 html,
 body {
   min-height: 100%;
-  /* We keep this right? */
   min-height: 100vh;
-  min-height: -webkit-fill-available;
-  /* We want the vendor-prefixed value to take affect
-                                         in browsers that support it, fall back to 100vh,
-                                         then 100%. */
+  min-height: -webkit-fill-available; // Vendor-prefixed value should affect
+  // browsers that support it, fall back to 100vh,
+  // then 100%
 }
 
-/* Consistent default fonts across browsers */
+/* Consistent default fonts across browsers
+source: https://github.com/sindresorhus/modern-normalize/blob/master/modern-normalize.css
+*/
 
 body {
   font-family:
