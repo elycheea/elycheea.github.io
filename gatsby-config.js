@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "elycheea.github.io",
+    title: "elysia hwang",
+    description: "A designer who loves code, or a developer who loves design.",
+    author: `@elycheea`,
   },
   plugins: [
     "gatsby-plugin-sharp",
@@ -11,6 +13,12 @@ module.exports = {
       options: {
         icon: "src/images/icon.png",
       },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('sass')
+      }
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
