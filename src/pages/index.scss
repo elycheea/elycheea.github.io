@@ -1,0 +1,20 @@
+@import '../styles/mixins';
+
+.tagline {
+  margin: 0 auto 1.5em;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: calc(1.5em + 0.66vw);
+  font-weight: 300;
+}
+
+.rwd-line {
+  @media screen and (min-width:  36em) {
+    display: block;
+  }
+}
+
+.intro {
+  max-width: min(100%, 56ch);
+  line-height: calc(4/3);
+  font-size: clamp(1em, 1vw, 1.25em);
+}
