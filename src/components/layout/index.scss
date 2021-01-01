@@ -1,4 +1,5 @@
-@import '../../styles/mixins.scss';
+@import '../../styles/mixins';
+@import '../../styles/variables';
 
 //-------------------------------------
 // Additional resets
@@ -57,6 +58,8 @@ pre {
 //-------------------------------------
 
 body {
+  background-color: $ui-bg;
+  color: $text-01;
   font-family: 'Inter';
 }
 
