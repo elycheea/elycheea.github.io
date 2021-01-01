@@ -19,7 +19,7 @@
   text-decoration: none;
   color: $ui-01;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.25em;
+  font-size: max(1.25em, 1.33vw);
   font-weight: 500;
 }
 
