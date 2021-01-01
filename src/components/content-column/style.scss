@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+// @import '../../styles/variables';
+
+.column--main {
+  grid-column: 1 / -1;
+  padding-top: 6em;
+
+  @include breakpoint('md') {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  @include breakpoint('lg') {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+}
