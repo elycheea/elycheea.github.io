@@ -1,8 +1,10 @@
+@import '../../styles/mixins.scss';
+
 //-------------------------------------
 // Additional resets
 //-------------------------------------
 
-/* Default to full height of viewport 
+/* Default to full height of viewport
 source: https://github.com/jensimmons/cssremedy/issues/70
 */
 
@@ -56,4 +58,16 @@ pre {
 
 body {
   font-family: 'Inter';
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  @include breakpoint('md') {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
