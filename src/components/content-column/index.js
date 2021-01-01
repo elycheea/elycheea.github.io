@@ -4,10 +4,8 @@ import "./style.scss";
 
 const ContentColumn = ({ children }) => {
   return (
-    <div className="grid">
-      <div class="column--main">
-        { children }
-      </div>
+    <div class="column--main">
+      { children }
     </div>
   )
 }

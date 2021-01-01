@@ -8,7 +8,9 @@ const Page = ({ children }) => {
   return (
     <Layout>
       <Header />
-      { children }
+      <div className="grid">
+        { children }
+      </div>
     </Layout>
   )
 }
