@@ -1,0 +1,23 @@
+// breakpoints
+$breakpoints: (
+  sm: 30em,   // 480px
+  md: 48em,   // 768px
+  lg: 66em,   // 1056px
+  wd: 82em    // 1200px
+);
+
+@mixin breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn 'Warning: `#{$name}` is not a valid breakpoint name.';
+  } @else {
+    @media (min-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  }
+}
+
+@mixin full-height {
+  min-height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* stylelint-disable-line */
+}
