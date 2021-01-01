@@ -1,12 +1,13 @@
 h1 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Roboto Mono', 'Inter', sans-serif;
 }
 
 .site-name {
   margin: 0 auto 0.5em;
   text-transform: lowercase;
-  font-size: calc(4em + 0.66vw);
-  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-size: calc(3em + 0.75vw);
+  font-weight: 300;
 }
 
 .intro {
