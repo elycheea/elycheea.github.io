@@ -1,0 +1,17 @@
+h1 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+.site-name {
+  margin: 0 auto 0.5em;
+  text-transform: lowercase;
+  font-size: calc(4em + 0.66vw);
+  font-weight: 500;
+}
+
+.intro {
+  max-width: min(100%, 56ch);
+  line-height: calc(4/3);
+  font-size: clamp(1em, 1vw, 1.25em);
+}
+
