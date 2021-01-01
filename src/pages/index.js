@@ -1,15 +1,14 @@
 import * as React from "react"
-import Layout from "../components/layout";
-import Header from "../components/site-header";
+import ContentColumn from "../components/content-column";
+import Page from "../templates/page";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <Layout>
-        testing
-      </Layout>
-    </>
+    <Page>
+      <ContentColumn>
+        <h1>Elysia Hwang</h1>
+      </ContentColumn>
+    </Page>
   )
 }
 
