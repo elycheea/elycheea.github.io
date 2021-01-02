@@ -3,6 +3,8 @@ import Aside from "../../components/aside";
 import ContentColumn from "../../components/content-column";
 import Page from "../../templates/page";
 
+import IconArrowUpRight from "../../components/icons/arrow-up-right";
+
 import "./style.scss";
 
 // data
@@ -54,6 +56,19 @@ const speaking = [
   }
 ];
 
+const awards = [
+  {
+    title: 'Nielsen Norman Group’s Intranet Design Annual 2019: The Year’s 10 Best Intranets',
+    url: 'https://www.nngroup.com/articles/intranet-design-2019/',
+    date: 'Jan 2019'
+  },
+  {
+    title: 'Step Two Intranet and Digital Workplace – Silver Award (2018)',
+    url: 'https://www.steptwo.com.au/award-winner/ibm-redesigning-a-collection-of-market-knowledge/',
+    date: 'Sep 2018'
+  }
+];
+
 const Info = () => {
   return (
     <Page>
@@ -98,6 +113,13 @@ const Info = () => {
         </div>
         <div className="content__section">
           <h2>Awards</h2>
+          {awards.map(award => (
+            <div className="card--exp">
+              <a className="award__link award__title" href={award.url}>
+                {award.title} <IconArrowUpRight size="18" className="award__icon" />
+              </a>
+            </div>
+          ))}
         </div>
       </Aside>
     </Page>
