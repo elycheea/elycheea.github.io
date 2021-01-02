@@ -4,6 +4,7 @@ import ContentColumn from "../../components/content-column";
 import Page from "../../templates/page";
 
 import IconArrowUpRight from "../../components/icons/arrow-up-right";
+import kaohsiung from "../../images/tree.png";
 
 import "./style.scss";
 
@@ -81,6 +82,8 @@ const Info = () => {
           I’m currently at IBM as a senior product designer and front-end lead on <a href="https://www.nngroup.com/news/item/2019-intranet-design-awards/">an internal product on our intranet</a>.
           My growing interest in design and frontend ops stems from experiences collaborating with and acting as both designer and developer.
         </p>
+
+        <img class="cover-img" src={kaohsiung} alt="Elysia sitting in front of a tree in Kaohsiung" />
       </ContentColumn>
       <Aside>
         <div className="content__section">
