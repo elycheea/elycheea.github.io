@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import * as React from "react"
 import ContentColumn from "../components/content-column";
 import Page from "../templates/page";
@@ -15,6 +16,7 @@ const Home = () => {
         <p className="intro">
           I’m Elysia Hwang, a creative technologist with a growing interest in design and frontend&nbsp;ops. I’m based in Atlanta, GA.
         </p>
+        <Link to="/info">+ Learn more</Link>
       </ContentColumn>
     </Page>
   )
