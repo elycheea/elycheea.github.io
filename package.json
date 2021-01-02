@@ -40,6 +40,7 @@
   },
   "main": "index.js",
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "sass": "^1.30.0",
     "stylelint": "^13.8.0",
     "stylelint-config-concentric-order": "^4.0.1",
