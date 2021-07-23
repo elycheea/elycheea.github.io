@@ -2,8 +2,9 @@
 
 .tagline {
   margin: 0 auto 1.25em;
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: calc(1.5em + 0.66vw);
+  font-family: Inter, sans-serif;
+  // font-size: calc(1.5em + 0.66vw);
+  font-size: calc(1.75em + 0.67vw);
   font-weight: 300;
 }
 
@@ -11,6 +12,12 @@
   @media screen and (min-width:  36em) {
     display: block;
   }
+}
+
+.highlight {
+  font-family: 'Jetbrains Mono', 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 200;
 }
 
 .intro {

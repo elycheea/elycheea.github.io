@@ -10,12 +10,13 @@ const Home = () => {
     <Page>
       <ContentColumn>
         <h2 className="tagline">
-          <span className="rwd-line">Designer who loves code // </span>
-          <span className="rwd-line">or developer who loves design</span>
+          <span className="rwd-line">Elysia Hwang is a <span className="highlight">UX engineer</span>&nbsp;/{' '}</span>
+          <span className="rwd-line"><span className="highlight">design technologist</span> based in{' '}</span>
+          <span className="rwd-line">Atlanta, GA</span>
         </h2>
-        <p className="intro">
+        {/* <p className="intro">
           I’m Elysia Hwang, a creative technologist with a growing interest in design and frontend&nbsp;ops. I’m based in Atlanta, GA.
-        </p>
+        </p> */}
         <Link to="/info">+ Learn more</Link>
       </ContentColumn>
     </Page>
