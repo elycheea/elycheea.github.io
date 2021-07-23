@@ -1,7 +1,10 @@
 import 'cssremedy/css/remedy.css';
 import 'cssremedy/css/reminders.css';
-import "fontsource-inter";
-import "fontsource-inter/600.css";
-import "fontsource-roboto-mono";
-import "fontsource-roboto-mono/300.css";
-import "fontsource-space-grotesk/500.css";
+import '@fontsource/jetbrains-mono';
+import '@fontsource/jetbrains-mono/200-italic.css';
+import 'fontsource-inter';
+import 'fontsource-inter/300.css';
+import 'fontsource-inter/600.css';
+// import "fontsource-roboto-mono";
+// import "fontsource-roboto-mono/300.css";
+import 'fontsource-space-grotesk/500.css';
