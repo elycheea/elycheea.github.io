@@ -13,8 +13,10 @@ const Work = ({ data }) => {
         <ul>
         {
           data.allMdx.nodes.map(node => (
-            <li key={node.slug}>
-              {node.frontmatter.title}
+            <li key={node.id}>
+              <h3>{node.frontmatter.title}</h3>
+              <span>{node.frontmatter.date}</span>
+              <p>{node.frontmatter.intro}</p>
             </li>
           ))
         }
@@ -25,12 +27,15 @@ const Work = ({ data }) => {
 }
 
 export const query = graphql`
-  query MdxCaseStudy {
-    allMdx {
+  query MdxCaseStudies {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         slug
+        id
         frontmatter {
           title
+          date(formatString: "MMMM YYYY")
+          intro
         }
       }
     }
