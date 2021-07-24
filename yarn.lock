@@ -7592,7 +7592,7 @@ gatsby-plugin-offline@^4.10.0:
 
 gatsby-plugin-page-creator@^3.10.0:
   version "3.10.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-3.10.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-3.10.0.tgz#aa9dc22a86bb3bd18ea200f8a4a39ea34d3a3425"
   integrity sha512-3DJUxqEcEyvAq3uoPP3MZIrlibruMkaG7vb0g6WOucA5kd6D/4Q7ghb6DT5WU0IKpOy6MNuH1c2Qba7KMpS4jQ==
   dependencies:
     "@babel/traverse" "^7.14.7"
