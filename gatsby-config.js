@@ -20,7 +20,6 @@ module.exports = {
         implementation: require('sass')
       }
     },
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -45,6 +44,19 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          work: require.resolve("./src/templates/case-study/index.js")
+        }
+      }
+    }
   ],
 };
