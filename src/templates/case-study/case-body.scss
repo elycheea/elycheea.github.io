@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+.case__body {
+  grid-column: 1 / -1;
+  padding-top: 2em;
+
+  @include breakpoint('md') {
+    grid-column-start: 2;
+    grid-column-end: 9;
+  }
+
+  @include breakpoint('lg') {
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
+}
