@@ -4,7 +4,7 @@ import "./style.scss";
 
 const ContentColumn = ({ children }) => {
   return (
-    <div class="column--main">
+    <div className="column--main">
       { children }
     </div>
   )
