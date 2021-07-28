@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+.case__header {
+  grid-column: 1 / -1;
+  padding-top: 4em;
+
+  @include breakpoint('md') {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  @include breakpoint('lg') {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+}
+
+.case__stack {
+  grid-column: 1 / -1;
+  padding-top: 1em;
+
+  @include breakpoint('md') {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  @include breakpoint('lg') {
+    padding-top: 4em;
+    grid-column-start: 7;
+    grid-column-end: 11;
+  }
+}
