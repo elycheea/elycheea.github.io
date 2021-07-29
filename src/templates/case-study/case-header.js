@@ -6,9 +6,9 @@ const CaseHeader = ({ post, children }) => {
   return (
     <>
       <div className="case__header">
-        <span>{post.date}</span>
+        <time datetime={post.isoDate}>{post.date}</time>
         <h1>{post.title}</h1>
-        <p>{post.intro}</p>
+        <p className="case__intro">{post.intro}</p>
       </div>
       <aside className="case__stack">
         {

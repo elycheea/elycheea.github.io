@@ -1,9 +1,10 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-// import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../../components/layout";
 import Header from "../../components/site-header";
 import CaseHeader from "./case-header";
+import CaseBody from "./case-body";
 
 // import "./style.scss";
 
@@ -13,11 +14,15 @@ const CaseStudy = ({ data }) => {
   return (
     <Layout>
       <Header />
-      <div className="grid">
+      <article className="grid">
         <CaseHeader post={post.frontmatter}>
         </CaseHeader>
-          {/* { children } */}
-      </div>
+        <CaseBody>
+          <MDXRenderer>
+            {post.body}
+          </MDXRenderer>
+        </CaseBody>
+      </article>
     </Layout>
   )
 }
@@ -29,9 +34,11 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM YYYY")
+        isoDate: date(formatString: "YYYY-MM")
         intro
         tags
       }
+      body
     }
   }
 `
