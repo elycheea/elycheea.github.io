@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/type';
 
 .case__header {
   grid-column: 1 / -1;
@@ -15,10 +16,8 @@
   }
 
   h1 {
+    @include type-style('display-01');
     margin-top: 2rem;
-    font-family: 'Space Grotesk', Inter, sans-serif;
-    font-size: 3em;
-    font-weight: 500;
   }
 
   time {

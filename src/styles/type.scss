@@ -1,0 +1,53 @@
+$font-families: (
+  'display': ('Space Grotesk', Inter, sans-serif),
+  'default': (Inter, sans-serif),
+) !default;
+
+// Get font-family
+// @param {string} $name
+// @return {string}
+@function font-family($name) {
+  @return map-get($font-families, $name);
+}
+
+// Include font-family definition for selector
+// @param {string} $name
+@mixin font-family($name) {
+  font-family: font-family($name);
+}
+
+$display-01: (
+  font-family: font-family('display'),
+  font-size: 3em,
+  font-weight: 500,
+) !default;
+
+$display-02: (
+  font-family: font-family('display'),
+  font-size: 1.75em,
+  font-weight: 500,
+  margin-bottom: 1.5rem,
+) !default;
+
+// @type map
+$tokens: (
+  display-01: $display-01,
+  display-02: $display-02,
+);
+
+@mixin properties($map) {
+  @each $name, $value in $map {
+    #{$name}: $value;
+  }
+}
+
+// Helper mixin for including given token
+@mixin type-style ($name) {
+  @if not map-has-key($tokens, $name) {
+    @error 'Unable to find a token matching `#{$name}`';
+  }
+
+  $token: map-get($tokens, $name);
+
+  @include properties($token);
+}
