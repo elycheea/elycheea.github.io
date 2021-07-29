@@ -6,7 +6,7 @@ const CaseHeader = ({ post, children }) => {
   return (
     <>
       <div className="case__header">
-        <time datetime={post.isoDate}>{post.date}</time>
+        <time dateTime={post.isoDate}>{post.date}</time>
         <h1>{post.title}</h1>
         <p className="case__intro">{post.intro}</p>
       </div>
