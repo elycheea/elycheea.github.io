@@ -22,5 +22,11 @@
 
   h2 {
     @include type-style('display-02');
+    margin-top: 4rem;
+  }
+
+  h3 {
+    @include type-style('display-03');
+    margin-top: 2.5rem;
   }
 }
