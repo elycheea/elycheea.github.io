@@ -2,31 +2,41 @@
 @import '../../styles/type';
 
 .case__body {
-  grid-column: 1 / -1;
-  padding-top: 2em;
-
-  @include breakpoint('md') {
-    grid-column-start: 2;
-    grid-column-end: 9;
-  }
-
-  @include breakpoint('lg') {
-    grid-column-start: 2;
-    grid-column-end: 7;
-  }
+  padding-top: 3em;
 
   p {
+    margin-top: 0;
+    margin-bottom: 2rem;
     font-size: 1.125em;
     line-height: 1.5;
   }
 
   h2 {
     @include type-style('display-02');
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+
+    // reduce margins for h3 immediately after h2 due to noncollapsing margins
+    & + h3 {
+      margin-top: .5rem;
+    }
   }
 
   h3 {
     @include type-style('display-03');
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  & > * {
+    grid-column: 1 / -1;
+
+    @include breakpoint('md') {
+      grid-column-start: 2;
+      grid-column-end: 9;
+    }
+
+    @include breakpoint('lg') {
+      grid-column-start: 2;
+      grid-column-end: 7;
+    }
   }
 }

@@ -4,7 +4,7 @@ import "./case-header.scss";
 
 const CaseHeader = ({ post, children }) => {
   return (
-    <>
+    <div className="grid">
       <div className="case__header">
         <time dateTime={post.isoDate}>{post.date}</time>
         <h1>{post.title}</h1>
@@ -26,7 +26,7 @@ const CaseHeader = ({ post, children }) => {
           </>
         )}
       </aside>
-    </>
+    </div>
   )
 }
 

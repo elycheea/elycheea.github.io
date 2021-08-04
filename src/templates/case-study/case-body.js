@@ -4,7 +4,7 @@ import "./case-body.scss";
 
 const CaseBody = ({ children }) => {
   return (
-    <div className="case__body">
+    <div className="grid case__body">
       { children }
     </div>
   )

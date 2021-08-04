@@ -18,7 +18,7 @@ const CaseStudy = ({ data }) => {
   return (
     <Layout>
       <Header />
-      <article className="grid">
+      <article>
         <CaseHeader post={post.frontmatter}>
         </CaseHeader>
         <CaseBody>
